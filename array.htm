@@ -1,0 +1,83 @@
+
+<!--Array-->
+<script>
+    balls = {"golf": "Golf balls, 6",
+             "tennis": "Tennis balls, 3",
+              "soccer": "Soccer ball, 1",
+               "ping": "Ping Pong balls, 1 doz"
+           }
+
+               for (ball in balls)
+                   document.write(ball + " = "+ balls[ball] + "<br>")
+</script>
+<br>
+
+
+<!--Creating multidimensional Array-->
+<script>
+    checkerbooard = Array(
+     Array( '', 'o', '', 'o', '', 'o', '', 'o'),
+     Array('o', '', 'o', '', 'o', '', 'o', ''),
+     Array('', 'o', '', 'o', '', 'o', '', 'o'),
+     Array('', '', '', '', '', '', '', '', ''),
+     Array('', '', '', '', '', '', '', '', ''),
+     Array('o', '', 'o', '', 'o', '', 'o', ''),
+     Array('', 'o', '', 'o', '', 'o', '', 'o'),
+     Array('o', '', 'o', '', 'o', '', 'o', '')),
+
+     document.write("<pre>")
+
+        for(j = 0 ; j < 8 ; ++j)
+     {
+         for (k = 0 ; k < 8; ++k)    
+             document.write(checkerbooard[j][k] + "")
+        
+             document.write("<br>")
+         }
+     document.write("</pre>") 
+</script>
+<br>
+
+    
+<!--Using foreach method-->
+ <script>
+ 	pets = ["Cat", "Dog", "Rabbit", "Hamstter"]
+ 	pets.forEach(output)
+
+ 	function output(element, index, array)
+ 	{
+ 		document.write("Element at index " + index +  " has the value" + element + "<br>")
+ 	}
+ </script>
+<br>
+
+
+<!--Using Join Method-->
+ <script>
+ 	pets = ["Cat", "Dog", "Rabbit", "Hamstter"]
+
+ 	document.write(pets.join()    + "<br>")
+ 	document.write(pets.join(' ')    + "<br>")
+ 	document.write(pets.join(' : ')    + "<br>")
+</script>
+
+
+
+<br>
+<!--Using Push and Pop Method-->
+<script>
+	sports = ["Football", "Tennis", "Baseball"]
+	document.write("Start = "    + sports + "<br>")
+
+	sports.push("Hockey")
+	document.write("After Push = " + sports + "<br>")
+
+	removed = sports.pop()
+	document.write("After pop = " + sports + "<br>")
+	document.write("Removed = " + removed + "<br>")
+</script>
+
+
+
+
+

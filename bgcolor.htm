@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+    var btn = document.querySelector('button');
+    function random(number){
+        return Math.floor(Math.random() * (number+1));
+    }
+    function changeBgColor(){
+        var rCol = 'rgb('+random(255)+ ','+ random(255) + ',' + random(255) +')';
+        document.body.style.backgroundColor=rCol;
+    }
+</script>
+</head>
+<body>
+    <button onclick="changeBgColor()">Change color</button>
+</body>
+</html>

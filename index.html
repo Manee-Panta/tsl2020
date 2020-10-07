@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript Examples</title>
+	<script >
+		alert("hello World!");
+	</script>
+
+
+	<style>
+ 	#randomImages{
+ 		width: 500px;
+ 		height: 400px;
+ 	}
+ </style>
+
+</head>
+<body>
+
+
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Admission Open</p>
+      <img src= "images/admissionOpen.jpg" width="960px" alt="admission open" title="admission open"/>
+    </div>
+  
+  </div>
+
+  
+    <div>
+        <h5>Original content</h5>
+        <p>Hello i am second <span>SEcond Span Content</span> paragraph</p>
+
+        <p>
+          inside paragraph
+          <span>inside span</span>
+          inside paragraph
+        </p>
+      </div>
+      <div>
+        <h5>Output</h5>
+        <div id="output"></div>
+      </div>
+
+<script>
+          /*
+          var baseElement = document.querySelector("p");
+            document.getElementById("output").innerHTML =
+            (baseElement.querySelector("div span").innerHTML);
+            */
+
+      </script>
+
+    <div id="errorMessage" style="color:red;"></div>
+
+    <form method="POST" name="login" onsubmit="return validateForm();">
+        <fieldset><legend>Login</legend>
+        <input type="text" name="eml" placeholder="you@domain.com">
+        <input type="password" name="password" placeholder="xxxxxxxx">
+        <input type="submit" name="submit" value="Login" />
+        </fieldset>
+    </form>
+
+
+
+
+
+	<form onsubmit="return getTotal()">
+        <input type="number" id="qty">
+        <input type="number" id="price">
+        <input type="submit" value="getResult">
+    </form>
+<div id="nettotal"></div>
+
+<div id="date"></div>
+
+<button onclick ="window.close()">Close</button>
+	
+	<div id="result" style="position:absolute; top:100px; right:50px;">
+
+    </div>
+
+    <div id="multable"></div>
+
+	<button onclick="hello()" > hello </button>
+<script>
+	var name="Class";
+	document.write("<h1>good Morning,"+name+" ,<h1>");
+</script>
+
+<script src="scripts/functions.js">
+	
+</script>
+
+
+<noscript>
+	<p> Tthis is a <a href="example.html">Link to more example</a>.</p>
+</noscript>
+
+
+
+<script>
+  var page = "News";
+switch (page)
+{
+	case "Home":
+	{ document.write("You selected Home") 
+	  break;
+	}
+	case "About": document.write("You selected About") 
+	break
+	case "News": document.write("You selected News") 
+	break
+	case "login": document.write("You selected Login") 
+	break
+	case "Links": document.write("You selected Links") 
+	break
+	default:
+	 document.write("Page not found");
+  }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Conter-Controlled Rrepetition</title>
+	<script>
+		
+		var counter = 1; //initialization
+
+		while (counter <= 7) // repetition condition
+		{
+		 document.write( "<p style = 'font-size: " +counter +" ex' >HTML5 font size " + "counter + "ex</p>">);
+			++counter; //increment
+		}
+	</script>
+</head> 
+
+<body>
+ <script>
+ 	numbers = []
+ 	numbers.push("One")
+ 	numbers.push("Two")
+ 	numbers.push("Three")
+
+ 	for (j = 0 ; j < numbers.length ; ++j)
+ 		document.write("Element " + j +" =" + numbers[j] + "<br>")
+
+ 	// numbers = Array( "One", "Two", "Three")
+ </script>
+
+
+ 
+
+
+
+
+
+<script>
+document.writeln("<h1>Square the num from 1 to 10 </h1>"):
+for(var i=1; i <=10; i++){
+	document.writeln("The square of "+ i +" is"+ square(i));
+}
+function square ( y ){
+	return y * y;
+
+}
+</script>
+
+
+<script>
+	var value;
+	document.writeln("<p> Random Numbers </p><ol>");
+	for( var i = 1; i <= 30; ++i)
+	{
+		value = Math.floor(1 + Math.random() * 6);
+		document.writeln( "<li>" + value + "</li>");
+
+	}
+	document.writeln( "</ol>");
+</script>
+
+
+
+	
+<script> 
+     <h2>Values in array1 by row</h2>
+     <div id="output1"></div>
+     <h2>Values i array2 by row</h2>
+     <div id="output2"></div>
+
+</script>
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
